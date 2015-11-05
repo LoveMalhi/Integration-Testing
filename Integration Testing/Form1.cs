@@ -17,40 +17,54 @@ namespace Integration_Testing
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
+     
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            findage(DateTime.Today.Year, dateTimePicker1.Value.Year);
-        }
 
-        private void findage(int tday,int dob)
+       
+        public static int findage(int tday,int dob)
         {
             tday = DateTime.Today.Year;
-            dob = dateTimePicker1.Value.Year;
-            int Age = tday-dob; // CurrentYear - BirthDate
+         
+            int age = tday-dob; // CurrentYear - BirthDate
 
-            tb1.Text = Age.ToString();
-            checkage(Age);
+            return age;
+           
         }
-        private void checkage(int Age)
+        public static void checkage(int age)
         {
-            if (Age > 18)
+            if (age > 18)
             {
-                label2.Text = "Alcohol in Canada Permitted";
+                MessageBox.Show( "Alcohol in Canada Permitted");
             }
             else
             {
-                label2.Text = "Alcohal not permitted in canada";
+                MessageBox.Show("Alcohol in Canada Permitted");
             }
         }
+        public static void calculate(int age)
+        {
+            if (age > 16)
+            {
+                MessageBox.Show("Alcohol in Germany Permitted");
+            }
+            else
+            {
+                MessageBox.Show("Alcohol in Germany Permitted");
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+           int tday = DateTime.Today.Year;
+            int dob = Convert.ToInt32(tb1.Text);
+            textBox1.Text = findage(tday,dob).ToString();
+        }
+
+     
     }
 }
