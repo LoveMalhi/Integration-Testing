@@ -17,22 +17,45 @@ namespace Integration_Testing
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            int Age = DateTime.Today.Year - dateTimePicker1.Value.Year; // CurrentYear - BirthDate
 
-            tb1.Text = Age.ToString();
+
+        public static int findage(int tday, int dob)
+        {
+            tday = DateTime.Today.Year;
+
+            int age = tday - dob; // CurrentYear - BirthDate
+
+            return age;
 
         }
+        public static void checkage(int age)
+        {
+            if (age > 21)
+            {
+                MessageBox.Show("Alcohol in USA");
+            }
+            else
+            {
+                MessageBox.Show("Alcohol is not permitted");
+            }
+        }
+      
+    
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int tday = DateTime.Today.Year;
+            int dob = Convert.ToInt32(textBox1.Text);
+            tb1.Text = findage(tday, dob).ToString();
+
+        }
+
+
     }
 }

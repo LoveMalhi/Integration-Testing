@@ -1,0 +1,7 @@
+G:\Integration-Testing\UnitTestProject3\bin\Debug\UnitTestProject3.dll
+G:\Integration-Testing\UnitTestProject3\bin\Debug\UnitTestProject3.pdb
+G:\Integration-Testing\UnitTestProject3\obj\Debug\UnitTestProject3.csprojResolveAssemblyReference.cache
+G:\Integration-Testing\UnitTestProject3\obj\Debug\UnitTestProject3.dll
+G:\Integration-Testing\UnitTestProject3\obj\Debug\UnitTestProject3.pdb
+G:\Integration-Testing\UnitTestProject3\bin\Debug\Integration Testing.exe
+G:\Integration-Testing\UnitTestProject3\bin\Debug\Integration Testing.pdb
