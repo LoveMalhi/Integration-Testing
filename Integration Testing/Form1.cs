@@ -16,5 +16,23 @@ namespace Integration_Testing
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            int Age = DateTime.Today.Year - dateTimePicker1.Value.Year; // CurrentYear - BirthDate
+
+            tb1.Text = Age.ToString();
+
+        }
     }
 }
