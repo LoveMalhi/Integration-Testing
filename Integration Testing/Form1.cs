@@ -29,10 +29,28 @@ namespace Integration_Testing
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            int Age = DateTime.Today.Year - dateTimePicker1.Value.Year; // CurrentYear - BirthDate
+            findage(DateTime.Today.Year, dateTimePicker1.Value.Year);
+        }
+
+        private void findage(int tday,int dob)
+        {
+            tday = DateTime.Today.Year;
+            dob = dateTimePicker1.Value.Year;
+            int Age = tday-dob; // CurrentYear - BirthDate
 
             tb1.Text = Age.ToString();
-
+            checkage(Age);
+        }
+        private void checkage(int Age)
+        {
+            if (Age > 18)
+            {
+                label2.Text = "Alcohol in Canada Permitted";
+            }
+            else
+            {
+                label2.Text = "Alcohal not permitted in canada";
+            }
         }
     }
 }
