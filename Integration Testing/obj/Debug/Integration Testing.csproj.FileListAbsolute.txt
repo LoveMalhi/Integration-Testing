@@ -1,1 +1,10 @@
 G:\quality assurance\Integration Testing\Integration Testing\bin\Debug\Integration Testing.exe.config
+C:\Users\LKaur6201\Desktop\Integration-Testing\Integration Testing\bin\Debug\Integration Testing.exe.config
+C:\Users\LKaur6201\Desktop\Integration-Testing\Integration Testing\bin\Debug\Integration Testing.exe
+C:\Users\LKaur6201\Desktop\Integration-Testing\Integration Testing\bin\Debug\Integration Testing.pdb
+C:\Users\LKaur6201\Desktop\Integration-Testing\Integration Testing\obj\Debug\Integration Testing.csprojResolveAssemblyReference.cache
+C:\Users\LKaur6201\Desktop\Integration-Testing\Integration Testing\obj\Debug\Integration_Testing.Form1.resources
+C:\Users\LKaur6201\Desktop\Integration-Testing\Integration Testing\obj\Debug\Integration_Testing.Properties.Resources.resources
+C:\Users\LKaur6201\Desktop\Integration-Testing\Integration Testing\obj\Debug\Integration Testing.csproj.GenerateResource.Cache
+C:\Users\LKaur6201\Desktop\Integration-Testing\Integration Testing\obj\Debug\Integration Testing.exe
+C:\Users\LKaur6201\Desktop\Integration-Testing\Integration Testing\obj\Debug\Integration Testing.pdb
