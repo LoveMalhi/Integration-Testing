@@ -52,21 +52,5 @@ namespace Integration_Testing
                 label2.Text = "Alcohal not permitted in canada";
             }
         }
-        private void calculate(int Age)
-        {
-            if (Age > 18)
-            {
-                label2.Text = "Alcohol in Canada Permitted";
-            }
-            else
-            {
-                label2.Text = "Alcohal not permitted in canada";
-            }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
