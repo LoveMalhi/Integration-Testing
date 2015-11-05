@@ -27,46 +27,46 @@ namespace Integration_Testing
 
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            findage(DateTime.Today.Year, dateTimePicker1.Value.Year);
-        }
 
-        private void findage(int tday,int dob)
+        public static int findage(int tday, int dob)
         {
             tday = DateTime.Today.Year;
-            dob = dateTimePicker1.Value.Year;
-            int Age = tday-dob; // CurrentYear - BirthDate
 
-            tb1.Text = Age.ToString();
-            checkage(Age);
+            int age = tday - dob; // CurrentYear - BirthDate
+
+            return age;
+
         }
-        private void checkage(int Age)
+        public static void checkage(int age)
         {
-            if (Age > 18)
+            if (age > 18)
             {
-                label2.Text = "Alcohol in Canada Permitted";
+                MessageBox.Show("Alcohol in Canada Permitted");
             }
             else
             {
-                label2.Text = "Alcohal not permitted in canada";
+                MessageBox.Show("Alcohol in Canada Permitted");
             }
         }
-        private void calculate(int Age)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            if (Age > 18)
-            {
-                label2.Text = "Alcohol in Canada Permitted";
-            }
-            else
-            {
-                label2.Text = "Alcohal not permitted in canada";
-            }
+            
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tb1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            int tday = DateTime.Today.Year;
+            int dob = Convert.ToInt32(tb1.Text);
+            tb2.Text = findage(tday, dob).ToString();
         }
     }
 }
